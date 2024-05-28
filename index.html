@@ -6,150 +6,169 @@
     <title>Meu Site Principal</title>
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-#hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-section {
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: auto;
-}
-
-h2 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.portfolio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-.blog-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    margin: 0.5rem 0;
-}
-
-form input, form textarea {
-    padding: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-form button {
-    padding: 0.7rem;
-    font-size: 1.2rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.perfil{
-    border-radius: 100px;
-    width: 50px;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-}
-
-.name{
-    position: absolute;
-    left: 70px;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        #hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+        form label {
+            margin: 0.5rem 0;
+        }
+        form input, form textarea {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        form button {
+            padding: 0.7rem;
+            font-size: 1.2rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .perfil {
+            border-radius: 100px;
+            width: 50px;
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+        .name {
+            position: absolute;
+            left: 70px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .card p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body background="matrix.gif">
     <header>
         <nav>
             <img src="perfil git.jpg" alt="Perfil" class="perfil">
-            
             <ul>
-                <p class="name"><a href="https://github.com/guilherme09zx">guilherme09zx on GitHub</a></p>
-                <li><a href="https://avachat.000.pe">AvaChat </a></li>
-                
+                <li><a class="name" href="https://github.com/guilherme09zx">guilherme09zx</a></li>
+                <li><p>Meus Projetos</p></li>
             </ul>
         </nav>
     </header>
-
     
-    
-
-    
+    <section class="project-container">
+        <div class="card">
+            <h3>Projeto: AVACHAT</h3>
+            <p>Avachat foi planejado e desenvolvido recentemente, um simples chat online, atualmente temos a versão 2.0(Beta). Muito a melhorar.</p>
+            <img src="avachat.jpg" alt="Projeto AVACHAT">
+        </div>
+        <div class="card">
+            <h3>Projeto: Telemédicos</h3>
+            <p>Site de telemedicina online, estrutura básica feita, site em desenvolvimento e planejamento.</p>
+            <img src="telemedicos.jpg" alt="Projeto Telemédicos">
+        </div>
+        <div class="card">
+            <h3>Projeto: EpicSword</h3>
+            <p>Um sonho de fazer um game 3d de mundo aberto, não iniciado ainda, mas ja temos uma pequena idéia de como pode ser, um mundo aberto, 3d, sem estrutura. Estudando a engine Unity.</p>
+            <img src="epicsword.jpg" alt="Projeto EpicSword">
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Guilherme M. Todos os direitos reservados.</p>
     </footer>
-
-    
 </body>
 </html>
